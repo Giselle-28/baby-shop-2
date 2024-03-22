@@ -1,0 +1,570 @@
+/* Estilo inicial */
+* {
+    font-family: Playfair Display, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Estilos para el header */
+.header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4.375rem;
+    background-color: #1B4242;
+    position: sticky;
+    top: 0;
+}
+
+/* Estilos para el logo */
+.logo img {
+    border-radius: 50px;
+    height: 50px; 
+    margin-left: 20px; /* Espacio entre el logo y los elementos del menú */
+}
+
+/* Estilos para el menú de navegación */
+.navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+}
+
+.navBar li {
+    display: inline;
+}
+
+.navBar li a {
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+    padding: 10px;
+}
+
+.navBar li a:hover {
+    color: #007bff; /* Cambia el color al pasar el cursor por encima */
+}
+
+
+
+
+.section-principal{
+    width: 100%;
+    height: 25rem;
+    background-image: url('../assets/minnie-zhou-0hiUWSi7jvs-unsplash.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el elemento */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-position: center center;
+    display: flex;
+    align-items:center;
+    justify-content: right;
+}
+
+
+.section-principal h1{
+    padding: 20px;
+    margin-bottom: 2.5rem;
+    font-size: 3.125rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.destacados h2{
+    margin: 0px;
+    background-color: #1B4242;
+    color: white;
+    margin-bottom: 2.5rem;
+    font-size: 3.125rem;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+
+/*Estilos para las Cards*/
+.contenedor-cards {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
+    justify-content: center;
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.card {
+    width: 250px; /* Ancho de las tarjetas */
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra de las tarjetas */
+}
+.card:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-img img {
+    width: 100%;    
+    height: 200px; /* Altura de la imagen */
+    object-fit: cover;
+}
+
+
+.card-content {
+    padding: 20px;
+    margin-bottom: 6.25rem;
+}
+
+.card-content h3 {
+    color: #1B4242;
+    margin-top: 0;
+}
+
+.card-content p {
+    color: #666;
+    padding: 20px;
+}
+
+.card-content .button {
+    display: inline-block;
+    background-color: #1B4242;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.card-content a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.card-content .button:hover {
+    background-color: #092635; /* Cambia el color al pasar el cursor sobre el botón */
+}
+
+
+
+
+.regalo {
+    padding: 30px;
+    background-color:#5C8374;
+    display:flex;
+}
+.regalo h2 {
+    margin-bottom: 10px;
+    font-size: 3.125rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: left;
+}
+.regalo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    margin-left: 400px; /* Espacio entre la imagen y el texto */
+}
+
+
+
+
+.formulario-contacto{
+    background-color: #9EC8B9;
+    padding: 50px;
+}
+/* Estilos para el formulario de contacto */
+form {
+    margin-top: 30px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f9f9f9;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #1B4242;
+}
+
+form button {
+    background-color: #1B4242;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #092635;
+}
+
+
+.formulario-contacto h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Estilos para el área de productos */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+main h1{
+    text-align: center;
+    font-size: 50px;
+    color: #092635;
+}
+
+.producto h2 {
+    color: #092635;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    color: #092635;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.producto button {
+    background-color: #1B4242;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.producto button:hover {
+    background-color: #092635;
+}
+
+
+/* Estilos para la sección de equipo */
+#equipo {
+    background-color: #f9f9f9;
+    padding: 0;
+    text-align: center;
+}
+
+#equipo .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#equipo h1 {
+    width: 100%;
+    margin-bottom: 30px;
+    color: #092635;
+    text-align: center;
+    font-size: 50px;
+}
+
+.miembro {
+    width: 250px; /* Ancho de cada miembro del equipo*/ 
+    height: 100vh;
+    margin: 50px; /* Espacio entre los miembros del equipo*/
+    margin-bottom: 30px;
+}
+
+.miembro img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.miembro h3 {
+    margin-bottom: 10px;
+    color: #092635;
+}
+.miembro p{
+    color: #092635;
+}
+
+/* Estilos para la sección de empresa*/
+#empresa {
+    display:flex;
+}
+
+#empresa .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#empresa h2 {
+    margin-bottom: 30px;
+    color: #092635;
+}
+
+#empresa p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555555;
+} 
+
+
+
+/* Estilos para la sección de guía de tallas */
+#guia-talles {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#guia-talles .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#guia-talles h2 {
+    color: #092635;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+#guia-talles p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #0e0d0d;
+}
+
+.tabla-tallas {
+    margin-top: 30px;
+}
+
+.tabla-tallas img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.tabla-tallas p {
+    font-size: 16px;
+}
+
+
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #092635;
+    color: #ffffff;
+    padding: 50px;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos para el footer-content */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.footer-section h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+}
+
+.links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-icons a img {
+    width: 40px; 
+    margin-right: 10px;
+}
+.logo-w {
+    position: fixed;
+    bottom: 0;
+    right:20px; /* Ajusta la posición del logo de WhatsApp */
+    width: 50px;
+    margin-bottom: 100px;
+    z-index: 999; /* Asegura que el logo de WhatsApp esté por encima de otros elementos */
+    transition: transform 0.3s ease;
+}
+.logo-w:hover{
+    transform: scale(1.2);
+}
+
+/* Estilos para el footer-bottom */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #1B4242;
+}
+
+
+/* Estilos iniciales */
+
+/* Media queries para tablets Index*/
+@media (max-width: 768px){
+    .navBar {
+        display: none; 
+    }
+    .header {
+        justify-content: center;
+    }
+    .logo img {
+        margin-left: 0;
+    }
+    .section-principal h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .destacados h2 {
+        font-size: 2.5rem;
+    }
+    .regalo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .regalo img {
+        margin-left: 0;
+    }
+    .footer-content {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .logo-w {
+        bottom: 20px;
+        right: 20px;
+        margin-bottom: 0; 
+    }
+}
+
+/* Media querys para teléfonos móviles Index*/
+@media (max-width: 320px) {
+    .section-principal h1 {
+        font-size: 2rem; 
+    }
+    .destacados h2 {
+        font-size: 2rem; 
+    }
+    .card {
+        width: 90%;
+    }
+    .card-content p {
+        padding: 10px;
+    }
+    .footer-content {
+        padding: 20px; 
+    }
+    .footer-section {
+        margin-bottom: 10px;
+    }
+    .logo-w {
+        bottom: 10px;
+    }
+}
+
+/* Media queries para tablets Productos*/
+@media (max-width: 768px) {
+
+    .logo img {
+        height: 40px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+    }
+    .navBar li a {
+        font-size: 18px;
+    }
+
+    .productos {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta el diseño de la cuadrícula de productos */
+    }
+}
+/* Media querys para teléfonos móviles Productos*/
+@media (max-width: 320px) {
+
+    .logo img {
+        height: 30px; 
+    }
+
+    .navBar li a {
+        font-size: 16px; 
+    }
+
+    .productos {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta el diseño de la cuadrícula de productos */
+    }
+
+}
+
