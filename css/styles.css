@@ -84,6 +84,23 @@
     text-align: center;
 }
 
+/* Seudoelemento para agregar una línea decorativa debajo del título de la sección de productos */
+.destacados h2::after {
+    content: "";
+    display: block;
+    width: 50px; /* Ancho de la línea */
+    height: 3px; /* Grosor de la línea */
+    background-color: #1B4242; /* Color de la línea */
+    margin-top: 10px; /* Espacio entre el título y la línea */
+}
+
+/* Seudoelemento para agregar un icono antes del título de cada producto */
+.destacados .producto h3::before {
+    font-family: "Font Awesome"; /* Asegúrate de tener Font Awesome cargado en tu proyecto */
+    margin-right: 5px; /* Ajusta el espacio entre el icono y el texto */
+    color: #1B4242; /* Color del icono */
+}
+
 /*Estilos para las Cards*/
 .contenedor-cards {
     display: flex;
@@ -423,6 +440,16 @@ footer {
     color: #ffffff;
     font-size: 18px;
     margin-bottom: 20px;
+}
+
+.footer-section.links a:hover {
+    color: #007bff; /* Cambia el color al pasar el cursor sobre los enlaces */
+}
+
+.footer-section.links a:before {
+    content: "\f105"; /* Código del icono deseado, por ejemplo, un icono de flecha */
+    font-family: "Font Awesome"; /* Asegúrate de tener Font Awesome cargado en tu proyecto */
+    margin-right: 5px; /* Añade espacio entre el icono y el texto */
 }
 
 .contact span {
