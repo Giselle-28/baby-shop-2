@@ -542,7 +542,10 @@ footer {
       font-size: 2rem;
     }
     .destacados h2 {
-      font-size: 1.5625rem;
+      font-size: 2rem;
+    }
+    .destacados h2 i {
+      width: 7%;
     }
     .card {
       width: 90%;
