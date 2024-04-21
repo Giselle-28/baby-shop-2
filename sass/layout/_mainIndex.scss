@@ -1,0 +1,64 @@
+// Estilos para la sección principal
+.section-principal {
+    width: 100%;
+    height: 25rem;
+    background-image: url('../assets/minnie-zhou-0hiUWSi7jvs-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  
+    h1 {
+      padding: 20px;
+      margin-bottom: 2.5rem;
+      font-size: 3.125rem;
+      color: white;
+      text-shadow: 2px 2px 2px black;
+    }
+  }
+  
+  // Estilos para la sección de destacados
+  .destacados {
+    h2 {
+      margin: 0;
+      background-color: map-get($colors, color2); 
+      color: white;
+      margin-bottom: 2.5rem;
+      font-size: 3.125rem;
+      text-shadow: 2px 2px 2px black;
+      text-align: center;
+    }
+  
+    .producto {
+      h3::before {
+        font-family: "Font Awesome";
+        margin-right: 5px; // Ajusta el espacio entre el icono y el texto
+        color: map-get($colors, color2);
+      }
+    }
+  }
+  
+ 
+  
+  // Estilos para la sección del regalo
+  .regalo {
+    padding: 30px;
+    background-color: map-get($colors, color3);
+    display: flex;
+  
+    h2 {
+      font-size: 3.125rem;
+      color: white;
+      text-shadow: 2px 2px 2px black;
+      text-align: center;
+    }
+  
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 200px;
+      margin-left: 300px; // Espacio entre la imagen y el texto
+    }
+  }

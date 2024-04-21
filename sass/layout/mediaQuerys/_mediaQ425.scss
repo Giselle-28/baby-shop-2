@@ -1,0 +1,41 @@
+/*index*/
+
+@media (max-width: 425px) {
+    .navBar {
+        display:block; 
+      }
+      .destacados h2 {
+        font-size: 30px;
+      } 
+}
+
+
+/*productos*/
+@media (max-width: 425px) {
+    
+  .productos {
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); 
+  }
+  .productos img {
+      width: 100%; 
+      height: 170px;
+  }
+}
+
+/*contacto*/
+@media (max-width: 425px) {
+  .formulario-contacto {
+      padding: 20px;
+  }
+
+  .formulario-contacto form {
+      padding: 20px;
+  }
+
+  .formulario-contacto h1 {
+      font-size: 30px;
+  }
+}
+
+
+

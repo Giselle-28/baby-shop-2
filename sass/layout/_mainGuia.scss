@@ -1,0 +1,40 @@
+// Estilos para la sección de guía de tallas
+#guia-talles {
+    padding: 50px 0;
+    background-color: map-get($colors, color4); // Color de fondo
+    text-align: center;
+  
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  
+    h2 {
+      color: map-get($colors, color1); // Color del texto
+      margin-bottom: 20px;
+      font-size: 50px;
+    }
+  
+    p {
+      font-size: 20px;
+      line-height: 1.6;
+      color: map-get($colors, text-dark); // Color del texto principal
+    }
+  
+    .tabla-tallas {
+      margin-top: 30px;
+  
+      img {
+        max-width: 100%;
+        height: auto;
+        border: 1px sólido #ddd;
+        @include border-radius(5px); // Bordes redondeados
+        margin-bottom: 10px;
+      }
+  
+      p {
+        font-size: 16px;
+      }
+    }
+  }

@@ -1,0 +1,33 @@
+// Estilos para la cabecera
+.header {
+    background-color: map-get($colors, color1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  
+    .logo img {
+      border-radius: 50px;
+      height: 50px;
+      margin-left: 20px;
+    }
+  
+    .navBar {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        display: inline;
+        margin-right: 20px;
+  
+        a {
+          text-decoration: none;
+          color: map-get($colors, color4);
+  
+          &:hover {
+            color: map-get($colors, highlight);
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,22 @@
+// Estilos para el header Index
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4.375rem;
+    background-color: map-get($colors,  color1);
+    position: sticky;
+    top: 0;
+  
+    // Estilos para el logo
+    .logo {
+      img {
+        border-radius: 50px;
+        height: 50px;
+        margin-left: 20px; // Espacio entre el logo y los elementos del menú
+      }
+    }
+  
+   
+  }

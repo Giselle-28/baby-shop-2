@@ -1,0 +1,86 @@
+// Estilos para el footer
+footer {
+    background-color: map-get($colors, color1);
+    color: map-get($colors, color4);
+    @include padding(50px);
+  
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+  
+      .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+  
+        .footer-section {
+          flex: 1;
+          margin-right: 30px;
+  
+          h3 {
+            color: map-get($colors, color4);
+            font-size: 18px;
+            margin-bottom: 20px;
+          }
+  
+          // Sección de enlaces
+          &.links {
+            ul {
+              list-style: none;
+              padding: 0;
+  
+              li {
+                margin-bottom: 10px;
+  
+                a {
+                  color: map-get($colors, color4);
+                  text-decoration: none;
+  
+                  &:hover {
+                    color: map-get($colors, highlight);
+                  }
+  
+                  &:before {
+                    font-family: "Font Awesome";
+                    margin-right: 5px;
+                  }
+                }
+              }
+            }
+          }
+  
+          // Sección de contacto
+          &.contact {
+            span {
+              display: block;
+              margin-bottom: 10px;
+            }
+          }
+        }
+  
+        // Sección de redes sociales
+        .social-icons {
+          a {
+            img {
+              width: 40px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+  
+      // Estilos para el logo de WhatsApp
+      .logo-w {
+        @include fixed_position("0", "20px", "50px");
+        margin-bottom: 100px;
+      }
+    }
+  
+    // Estilos para la sección inferior del footer
+    .footer-bottom {
+      text-align: center;
+      @include padding(20px);
+      background-color: map-get($colors, color2);
+    }
+  }

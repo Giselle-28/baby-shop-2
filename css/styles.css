@@ -162,17 +162,16 @@
     display:flex;
 }
 .regalo h2 {
-    margin-bottom: 10px;
     font-size: 3.125rem;
     color: white;
     text-shadow: 2px 2px 2px black;
-    text-align: left;
+    text-align: center;
 }
 .regalo img {
     width: 200px;
     height: 200px;
     border-radius: 200px;
-    margin-left: 400px; /* Espacio entre la imagen y el texto */
+    margin-left: 300px; /* Espacio entre la imagen y el texto */
 }
 
 
@@ -568,6 +567,8 @@ footer {
     .navBar {
       display:block; 
     }
+  
+
    
   }
 

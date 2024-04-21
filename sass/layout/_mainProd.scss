@@ -1,0 +1,50 @@
+// Estilos para el contenido principal
+main {
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    color: map-get($colors, highlight);
+  }
+}
+
+
+// Estilos para el área de productos
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .producto {
+    background-color: map-get($colors, color4);
+    border-radius: 10px;
+    padding: 20px;
+    @include box-shadow(10px, map-get($colors, shadow-light));
+  
+    img {
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+  
+      &:hover {
+        @include box-shadow(15px, map-get($colors, shadow-dark));
+      }
+    }
+  
+    h2 {
+      color: map-get($colors, text-dark);
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      color: map-get($colors, text-dark);
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+  
+    button {
+      @include button-style(map-get($colors, color1), map-get($colors, text-white), map-get($colors, highlight));
+    }
+  }

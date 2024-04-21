@@ -1,0 +1,48 @@
+/* Media querys para teléfonos móviles Index*/
+@media (max-width: 320px) {
+    .section-principal h1 {
+      font-size: 2rem;
+    }
+    .destacados h2 {
+      font-size: 2rem;
+    }
+    .destacados h2 i {
+      width: 7%;
+    }
+    .card {
+      width: 90%;
+    }
+    .card-content p {
+      padding: 10px;
+    }
+    .footer-content {
+      padding: 20px;
+    }
+    .footer-section {
+      margin-bottom: 10px;
+    }
+    .logo-w {
+      bottom: 10px;
+    }
+    .navBar {
+      display:block; 
+    }
+  
+
+   
+  }
+
+  /* Media querys para teléfonos móviles Contacto*/
+  @media (max-width: 320px) {
+    .formulario-contacto {
+        padding: 10px;
+    }
+
+    .formulario-contacto form {
+        padding: 10px;
+    }
+
+    .formulario-contacto h1 {
+        font-size: 25px;
+    }
+}

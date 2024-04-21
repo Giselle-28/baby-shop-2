@@ -1,0 +1,47 @@
+// Mixins
+@mixin box-shadow($blur, $color) {
+    box-shadow: 0px 0px $blur $color;
+  }
+  
+  @mixin button-style($bg-color, $text-color, $hover-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+
+  // Mixin para padding
+@mixin padding($size) {
+  padding: $size;
+}
+
+// Mixin para posición fija
+@mixin fixed_position($bottom, $right, $width) {
+  position: fixed;
+  bottom: $bottom;
+  right: $right;
+  width: $width;
+  z-index: 999;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+// Mixin para el borde redondeado
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+// Mixin para sombras
+@mixin box-shadow($shadow) {
+  box-shadow: $shadow;
+}
